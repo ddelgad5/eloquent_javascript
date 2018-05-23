@@ -1,4 +1,7 @@
 //Chapter 2
+//prompt functionality for node.js
+var prompt = require('prompt');
+prompt.start();
 
 let x = 30;
 console.log("The value of x is :", x);

@@ -17,3 +17,12 @@ for (let rows=0; rows < 7; rows++) {
   console.log(hash+"\n");
   hash = hash + "#";
 }
+
+//FizzBuzz
+console.log("\nFizzBuzz\n");
+for (let counter = 1; counter <= 100; counter++) {
+  let output = "";
+  if (counter % 3 == 0) output = "Fizz";
+  if (counter % 5 == 0) output += "Buzz";
+  console.log(output || counter);
+}

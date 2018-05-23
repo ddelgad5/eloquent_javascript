@@ -26,3 +26,16 @@ for (let counter = 1; counter <= 100; counter++) {
   if (counter % 5 == 0) output += "Buzz";
   console.log(output || counter);
 }
+
+//Chessboard
+console.log ("\nChessBoard\n");
+let boardSize = 8;
+let output = "";
+for (let rows = 0; rows < boardSize; rows++) {
+  for (let columns = 1+rows; columns <= boardSize+rows; columns++) {
+    if (columns % 2 == 0) output += "#";
+    else output += " ";
+  }
+  output += "\n";
+}
+console.log(output);
